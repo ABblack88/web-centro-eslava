@@ -1,0 +1,29 @@
+{
+  "name": "web-centro-eslava",
+  "version": "1.0.0",
+  "description": "pagina wed del centro eslava de masajes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/styles.css -o ./styles.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/styles.css -o ./styles.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABblack88/web-centro-eslava.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ABblack88/web-centro-eslava/issues"
+  },
+  "homepage": "https://github.com/ABblack88/web-centro-eslava#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "tailwindcss": "^4.3.3"
+  }
+}

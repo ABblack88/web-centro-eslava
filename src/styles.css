@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --color-primary: #006671;
+  --color-brand-teal: #0097A7;
+  --color-slate-50: #F8FAFC;
+  --color-slate-200: #E2E8F0;
+  --color-slate-500: #64748B;
+  --color-slate-900: #0F172A;
+  
+  --color-surface-tint: #006874;
+  --color-on-surface: #1a1c1d;
+  --color-surface-container-high: #e8e8ea;
+  --color-outline-variant: #bcc9cb;
+  --color-outline: #6d797b;
+  --color-text-secondary: #86868B;
+  --color-surface-white: #FFFFFF;
+  --color-surface: #f9f9fb;
+  --color-on-surface-variant: #3d494b;
+  --color-secondary: #5f5e60;
+  --color-surface-variant: #e2e2e4;
+  --color-primary-fixed: #97f0ff;
+  --color-surface-container-low: #f3f3f5;
+  --color-primary-fixed-dim: #66d6e7;
+  --color-clinical-teal-muted: #E0F2F1;
+  --color-background: #f9f9fb;
+
+  --spacing-stack-md: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-stack-lg: 2rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-section-gap: 6rem;
+  --spacing-margin-page: 2rem;
+
+  --font-headline-lg: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-display-lg: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Inter", sans-serif;
+  --font-title-md: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+
+  --font-size-headline-lg: 32px;
+  --font-size-headline-lg--line-height: 1.2;
+  --font-size-headline-lg--letter-spacing: -0.01em;
+  --font-size-headline-lg--font-weight: 600;
+  
+  --font-size-body-lg: 18px;
+  --font-size-body-lg--line-height: 1.6;
+  --font-size-body-lg--font-weight: 400;
+  
+  --font-size-display-lg: 48px;
+  --font-size-display-lg--line-height: 1.1;
+  --font-size-display-lg--letter-spacing: -0.02em;
+  --font-size-display-lg--font-weight: 700;
+  
+  --font-size-label-sm: 12px;
+  --font-size-label-sm--line-height: 1;
+  --font-size-label-sm--letter-spacing: 0.05em;
+  --font-size-label-sm--font-weight: 600;
+  
+  --font-size-headline-lg-mobile: 28px;
+  --font-size-headline-lg-mobile--line-height: 1.2;
+  --font-size-headline-lg-mobile--font-weight: 600;
+  
+  --font-size-title-md: 20px;
+  --font-size-title-md--line-height: 1.4;
+  --font-size-title-md--font-weight: 600;
+  
+  --font-size-body-md: 16px;
+  --font-size-body-md--line-height: 1.6;
+  --font-size-body-md--font-weight: 400;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-slate-50);
+    color: var(--color-slate-900);
+  }
+
+  h1, h2, h3, h4, .display-font {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white transition-all duration-200 ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#007A90] -translate-y-[2px] shadow-[0_4px_6px_-1px_rgba(0,151,178,0.4)];
+  }
+  
+  .btn-primary:active {
+    @apply translate-y-0 scale-99;
+  }
+
+  .btn-whatsapp-float {
+    @apply fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full w-[60px] h-[60px] flex items-center justify-center shadow-[0_10px_15px_-3px_rgba(37,211,102,0.3)] z-[1000] transition-transform duration-300 ease-in-out;
+  }
+
+  .btn-whatsapp-float:hover {
+    @apply scale-110;
+  }
+
+  .hero-pattern {
+    background-color: var(--color-slate-50);
+    background-image: radial-gradient(var(--color-slate-300, #CBD5E1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .form-input {
+    @apply border border-slate-200 transition-all duration-200;
+  }
+
+  .form-input:focus {
+    @apply border-primary outline-none ring-[3px] ring-primary/10;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
