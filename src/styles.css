@@ -24,6 +24,12 @@
   --color-primary-fixed: #97f0ff;
   --color-surface-container-low: #f3f3f5;
   --color-primary-fixed-dim: #66d6e7;
+  --color-tertiary-fixed-dim: #ffb782;
+  --color-secondary-fixed-dim: #c8c6c8;
+  --color-primary-container: #00818f;
+  --color-on-primary-container: #f7feff;
+  --color-on-tertiary-fixed: #301400;
+  --color-on-secondary-fixed: #1b1b1d;
   --color-clinical-teal-muted: #E0F2F1;
   --color-background: #f9f9fb;
 
@@ -47,7 +53,7 @@
   --font-size-headline-lg--letter-spacing: -0.01em;
   --font-size-headline-lg--font-weight: 600;
   
-  --font-size-body-lg: 18px;
+  --font-size-body-lg: 20px;
   --font-size-body-lg--line-height: 1.6;
   --font-size-body-lg--font-weight: 400;
   
@@ -56,7 +62,7 @@
   --font-size-display-lg--letter-spacing: -0.02em;
   --font-size-display-lg--font-weight: 700;
   
-  --font-size-label-sm: 12px;
+  --font-size-label-sm: 14px;
   --font-size-label-sm--line-height: 1;
   --font-size-label-sm--letter-spacing: 0.05em;
   --font-size-label-sm--font-weight: 600;
@@ -65,11 +71,11 @@
   --font-size-headline-lg-mobile--line-height: 1.2;
   --font-size-headline-lg-mobile--font-weight: 600;
   
-  --font-size-title-md: 20px;
+  --font-size-title-md: 24px;
   --font-size-title-md--line-height: 1.4;
   --font-size-title-md--font-weight: 600;
   
-  --font-size-body-md: 16px;
+  --font-size-body-md: 18px;
   --font-size-body-md--line-height: 1.6;
   --font-size-body-md--font-weight: 400;
 }
@@ -124,5 +130,18 @@
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
+}
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
 
