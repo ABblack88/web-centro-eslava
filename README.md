@@ -1,38 +1,42 @@
-# 💆‍♂️ Centro Eslava - Web Oficial
+# 💆‍♂️ Centro Eslava — Physiotherapy & Rehabilitation Website
 
 [![Estado](https://img.shields.io/badge/Estado-En_Producci%C3%B3n-green?style=for-the-badge)](#)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
-[![Performance](https://img.shields.io/badge/Performance-Optimized-blueviolet?style=for-the-badge)](#)
+[![Sitio Web](https://img.shields.io/badge/Live_Website-centroeslava.pe-blue?style=for-the-badge)](https://www.centroeslava.pe/)
 
-Desarrollo integral de la plataforma web corporativa para el **Centro Eslava** (clínica especializada en masajes y terapias). Arquitectura orientada al SEO, velocidad de carga extrema y diseño adaptativo (*Responsive Design*).
+## About the Project
 
-## 🚀 Arquitectura y Optimizaciones
+A professional website developed for **Centro Eslava**, a physiotherapy and rehabilitation center based in Lima, Peru.
 
-A diferencia de las plantillas prefabricadas, este proyecto está construido con un enfoque *Performance-First*:
+The project was designed to provide a clear digital presence for the business, showcase its services and treatments, and make it easier for potential patients to learn about the center and contact the business. 
 
-- **Estilado Escalable (Tailwind v4):** Uso avanzado de Tailwind CSS mediante CLI, integrando contenedores de consultas (*container-queries*) y formularios para una UI moderna y mantenible.
-- **Optimización de Assets (Sharp):** Implementación de un pipeline de Node.js custom (`compress.js`) utilizando la librería `sharp` para procesar, redimensionar y comprimir imágenes automáticamente, asegurando los mejores tiempos de carga.
-- **Estructura Multi-Página Estática:** División semántica por servicios (`fascitis-plantar.html`, `magnetoterapia.html`, etc.) garantizando una indexación perfecta en motores de búsqueda (SEO).
-- **Proceso de Build Automatizado:** Scripts NPM configurados para compilación y minificación de CSS en entornos de despliegue (`npm run build`).
+Beyond a standard template, this project was built with a *Performance-First* approach, ensuring extreme loading speeds and advanced SEO optimization.
 
-## 🛠️ Stack Tecnológico
+## Main Features
 
-- **Maquetación:** HTML5 Semántico
-- **Estilos:** Tailwind CSS v4 (CLI)
-- **Automatización & Node:** JavaScript, `sharp` (Image processing)
-- **Control de Versiones:** Git / GitHub
+- **Responsive website:** Adaptive design for mobile, tablet, and desktop.
+- **Service and treatment pages:** Dedicated sections for pathologies (e.g., Plantar Fasciitis, Muscle Discharge).
+- **Contact & Booking:** Business-oriented landing pages with clear call-to-actions.
+- **Performance Optimized:** Custom Node.js image compression pipeline (`sharp`) y Tailwind CSS v4.
 
-## 📦 Comandos de Desarrollo
+## My Role
 
-Si deseas compilar los estilos de forma local para contribuir o modificar la web:
+- Web development & Frontend implementation
+- Website structure and content organization
+- Responsive design
+- Performance optimization & CI/CD Deployment setup
 
-```bash
-# 1. Instalar dependencias (Tailwind y Sharp)
-npm install
+## Technologies
 
-# 2. Ejecutar entorno de desarrollo (Tailwind Watch)
-npm run dev
+- **HTML5 & CSS3**
+- **Tailwind CSS v4 (CLI)**
+- **JavaScript (Vanilla & Node.js for tooling)**
+- **Cloudflare Pages (Hosting)**
 
-# 3. Generar Build para Producción (Minificado)
-npm run build
-```
+## What I Learned
+
+This project gave me practical experience building a real-world website for a business, translating business requirements into a functional digital product, and structuring content around user experience and conversion. I also deepened my knowledge in modern CSS architectures (Tailwind) and automated asset optimization.
+
+---
+
+### 🌐 Live Project
+**Visit the live website:** [https://www.centroeslava.pe/](https://www.centroeslava.pe/)
